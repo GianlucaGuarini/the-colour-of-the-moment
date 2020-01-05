@@ -1,0 +1,69 @@
+<app>
+  <h1>The colour of the moment is</h1>
+  <figure>
+    <div>
+      <img src="/api/image"/>
+    </div>
+    <figcaption>This colour image was randomly generated</figcaption>
+  </figure>
+
+  <style>
+    :host {
+      font-family: Helvetica Neue, Helvetica, Arial;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      height: 100vh;
+      width: 100%;
+      color: white;
+      padding: 1rem;
+    }
+
+    h1 {
+      flex: 0 0 100%;
+      text-align: center;
+      font-weight: 400;
+      margin-bottom: 0.4rem;
+    }
+
+    figure {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    figure div {
+      position: relative;
+      display: block;
+      border: 2px solid #111;
+      width: 64px;
+      height: 64px;
+      overflow: hidden;
+      border-radius: 100%;
+      margin-bottom: 0.8rem;
+    }
+
+    figure div:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 100%;
+      box-shadow: inset 0px 0px 5px 2px rgba(0,0,0,0.25);
+    }
+
+    img {
+      width: 100%;
+    }
+
+    figcaption {
+      font-size: 1.2rem;
+      font-weight: 200;
+      text-align: center;
+      flex: 0 0 100%;
+    }
+  </style>
+</app>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The colour of the moment</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css' />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        background: #1a1a1a;
+      }
+    </style>
+  </head>
+  <body>
+    <app></app>
+
+    <script type="text/javascript" src="https://unpkg.com/riot@4/riot+compiler.js"></script>
+    <script type="riot" src="./app.riot"></script>
+
+    <script type="text/javascript">
+      riot.compile().then(() => {
+        riot.mount('app')
+      })
+    </script>
+  </body>
+</html>
