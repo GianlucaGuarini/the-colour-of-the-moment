@@ -7,6 +7,11 @@
     <figcaption>This colour image was randomly generated</figcaption>
   </figure>
 
+  <small>
+    Made by Gianluca Guarini -
+    <a rel="nofollow" href="https://github.com/GianlucaGuarini/the-colour-of-the-moment">Github</a>
+  </small>
+
   <style>
     :host {
       font-family: Helvetica Neue, Helvetica, Arial;
@@ -31,6 +36,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      padding-bottom: 2.4rem;
     }
 
     figure div {
@@ -41,7 +47,7 @@
       height: 64px;
       overflow: hidden;
       border-radius: 100%;
-      margin-bottom: 0.8rem;
+      margin-bottom: 0.4rem;
     }
 
     figure div:after {
@@ -60,10 +66,24 @@
     }
 
     figcaption {
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: 200;
       text-align: center;
       flex: 0 0 100%;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    small {
+      font-weight: 200;
+      color: #888;
+      position: fixed;
+      bottom: 0;
+      padding: 0.6rem 0;
+      background: #1a1a1a;
     }
   </style>
 </app>
